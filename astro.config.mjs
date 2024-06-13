@@ -12,16 +12,16 @@ export default defineConfig({
   image: {
     domains: ["images.unsplash.com"],
   },
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "es"],
-    fallback: {
-      es: "en",
-    },
-    routing: {
-      prefixDefaultLocale: false,
-    },
-  },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en", "es"],
+  //   fallback: {
+  //     es: "en",
+  //   },
+  //   routing: {
+  //     prefixDefaultLocale: false,
+  //   },
+  // },
 
   prefetch: true,
   integrations: [
