@@ -1,0 +1,75 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
+import FAQ from "@components/sections/FAQ.astro";
+import congoImage from "@images/mtvCloudsPage/congo.jpeg";
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+import featureImage from "@images/mtvCloudsPage/lora.jpeg";
+import construction from "@images/construction-image.avif";
+import tools from "@images/automated-tools.avif";
+import dashboard from "@images/dashboard-image.avif";
+---
+
+<MainLayout>
+
+  <HeroSection
+    title=`Your best tour option with <span
+        class="text-orange-600 dark:text-orange-500">Monteverde in The Clouds</span>`
+    subTitle="Come enjoy a magnificent experience in Monteverde, with our beautiful nature"
+    primaryBtn="Tours information"
+    primaryBtnURL="/services"
+    secondaryBtn="Reserve tour"
+    secondaryBtnURL="/contact"
+    src={congoImage}
+    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+  />
+
+  <FeaturesGeneral
+    title="Bla bla bla"
+    subTitle="blabla blablablba"
+    src={featureImage}
+    alt="snake in night tour"
+    features={features}
+  />
+
+  <FeaturesNavs
+    title=`A quick look at what we offer you in <span class="text-orange-600 dark:text-orange-500">Monteverde in the clouds</span>, for more information visit the tours tab.`
+    tabs={[
+      {
+        heading: "Hiking reserve tour",
+        content:
+          "Walk along beautiful natural trails with an experienced guide and see different species of birds and mammals. Learn about the amazing diversity of the cloud forest.",
+        svg: "tools",
+        src: tools,
+        alt: "Yellow and black heavy equipment on brown grass field",
+        first: true,
+      },
+      {
+        heading: "Night tour",
+        content:
+          "Walking in the forest at night is a magical experience! Possible sightings are mammals, tarantulas and sleeping birds. Enjoy the nightly symphony of frogs and insects.",
+        svg: "dashboard",
+        src: dashboard,
+        alt: "A screenshot or graphic representation of the intuitive dashboard",
+        second: true,
+      },
+      {
+        heading: "Bird watching tour",
+        content:         
+          "A specialized tour with an expert guide that focuses on bird observation, showing you a fanciful world of colors and sounds.",
+        svg: "house",
+        src: construction,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+    ]}
+  />
+
+
+
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+</MainLayout>

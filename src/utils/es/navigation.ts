@@ -1,0 +1,40 @@
+
+const navBarLinks = [
+  { name: "Inicio", url: "/fr" },
+  { name: "Toures", url: "/fr/services" },
+  { name: "Contacto", url: "/fr/contact" },
+];
+
+const footerLinks = [
+  {
+    section: "Écosystème",
+    links: [
+      { name: "Documentation", url: "/fr/welcome-to-docs/" },
+      { name: "Outils et Équipements", url: "/fr/products" },
+      { name: "Services de Construction", url: "/fr/services" },
+    ],
+  },
+  {
+    section: "Société",
+    links: [
+      { name: "À propos de nous", url: "#" },
+      { name: "Blog", url: "/fr/blog" },
+      { name: "Carrières", url: "#" },
+      { name: "Clients", url: "#" },
+    ],
+  },
+];
+
+const socialLinks = {
+  facebook: "#",
+  x: "#",
+  github: "https://github.com/mearashadowfax/ScrewFast",
+  google: "#",
+  slack: "#",
+};
+
+export default {
+  navBarLinks,
+  footerLinks,
+  socialLinks,
+};
