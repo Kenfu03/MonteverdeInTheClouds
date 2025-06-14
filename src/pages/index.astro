@@ -5,13 +5,13 @@ import HeroSection from "@components/sections/landing/HeroSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import FAQ from "@components/sections/FAQ.astro";
-import congoImage from "@images/mtvCloudsPage/congo.jpeg";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
-import featureImage from "@images/mtvCloudsPage/lora.jpeg";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import featureImage from "@images/mtvCloudsPage/principal.png";
+import featureSecundary from "@images/mtvCloudsPage/secundary.png";
+import birdwatching from "@images/mtvCloudsPage/birdwatching.png";
+import naturalhistory from "@images/mtvCloudsPage/naturalhistory.png";
+import nighttour from "@images/mtvCloudsPage/nighttour.png";
 ---
 
 <MainLayout>
@@ -24,8 +24,8 @@ import dashboard from "@images/dashboard-image.avif";
     primaryBtnURL="/services"
     secondaryBtn="Reserve tour"
     secondaryBtnURL="/contact"
-    src={congoImage}
-    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+    src={featureSecundary}
+    alt="Howler monkey resting in a tree"
   />
 
   <FeaturesGeneral
@@ -44,8 +44,8 @@ import dashboard from "@images/dashboard-image.avif";
         content:
           "Walk along beautiful natural trails with an experienced guide and see different species of birds and mammals. Learn about the amazing diversity of the cloud forest.",
         svg: "tools",
-        src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
+        src: naturalhistory,
+        alt: "monkey in a tree",
         first: true,
       },
       {
@@ -53,17 +53,16 @@ import dashboard from "@images/dashboard-image.avif";
         content:
           "Walking in the forest at night is a magical experience! Possible sightings are mammals, tarantulas and sleeping birds. Enjoy the nightly symphony of frogs and insects.",
         svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
+        src: nighttour,
+        alt: "Frog in a leave",
       },
       {
         heading: "Bird watching tour",
         content:         
           "A specialized tour with an expert guide that focuses on bird observation, showing you a fanciful world of colors and sounds.",
         svg: "house",
-        src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
+        src: birdwatching,
+        alt: "side picture of a bird",
       },
     ]}
   />
